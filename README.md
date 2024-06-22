@@ -12,15 +12,30 @@ We intend to provide a hub and tooling to compose, share, and discover Linked Da
 
 ## Background
 
-In the context of Linked Data, shapes provide templates for how to describe and store information about a person or idea or recipe... These shapes are interrelated, collectively forming a larger shape of shapes. Each application focuses on different subsets of these shapes.
+In the context of Linked Data, shapes can be expressed in standard formats like [Shex](https://shex.io/) or [SHACL](https://www.w3.org/TR/shacl/); and less formally in a picture:
+
+<img src="./person_shape_white_background.png" alt="simple shape of person" width=300 />
+
+Shapes provide templates for how to describe and store information about a person or idea or recipe...
+
+<img src="./person_shape.jpg" alt="person shape simplified" width=180 /> <img src="./recipe_shape.jpg" alt="recipe shape" width=200 /> <img src="./accommodation_shape.jpg" alt="accommodation shape" width=300 /> <img src="./group_shape.jpg" alt="group shape" width=150 /> <img src="./solid_shape.jpg" alt="Solid profile shape" width=220 /> <img src="./thing_shape.jpg" alt="thing shape" width=180 />
+
+
+These shapes are interrelated, collectively forming a larger shape of shapes.
+
+<img src="./shape_of_shapes.jpg" alt="shape of shapes" width=350 />
+
+Each application focuses on different subsets of these shapes.
 
 For example, most applications will want to display or edit person's name and profile picture. Additional shapes are used depending on the application's purpose: a cookbook app will work with a recipe shape, while a map app will work with points of interest and coordinates.
 
+<img src="./app1_shape.jpg" alt="shape of hospitality exchange app" height=200 /> <img src="./app2_shape.jpg" alt="shape of cookbook app" height=200 />
+
+Together they form a bigger picture:
+
+<img src="./bigger_picture.jpg" alt="bigger picture" width=300 />
+
 To ensure that applications can understand each other, developers need to agree on the shapes they use.
-
-Shapes can be expressed in standard formats like [Shex](https://shex.io/) or [SHACL](https://www.w3.org/TR/shacl/); and less formally in a picture:
-
-<img src="./person_shape_white_background.png" alt="simple shape of person" width=300 />
 
 If I can see what data shapes other developers have used, I can build an application that is at least partially interoperable by using the same shapes as much as possible.
 
@@ -42,7 +57,7 @@ There are other important aspects besides shapes, such as access control and dat
 
 ### Advertise
 
-- `sham publish` Publishes locally stored shapes to ldsham
+- `sham publish` Publishes local shapes to ldsham registry
   - shapes are versioned along the lines of npm
 
 ### Develop
@@ -60,3 +75,9 @@ There are other important aspects besides shapes, such as access control and dat
 - Generate TypeScript types (LDO already does this, so maybe not needed)
 - Shape visualization and visual shape composer
 - Generate a [ldhop](https://github.com/ldhop/ldhop) query based on the app shape
+
+## Dogfooding
+
+- Use Solid identity for authentication
+- Use ClientId to identify apps
+- Some form of decentralization of the registry with Solid?
