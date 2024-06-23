@@ -8,7 +8,11 @@ Inspired by Node Package Manager, we intend to build "npm" for shapes that Linke
 
 ## Overview
 
-We intend to provide a hub and tooling to compose, share, and discover Linked Data applications' data shapes easily, thereby nurturing interoperability within the Linked Data and Solid ecosystem.
+We intend to provide a hub and tooling to easily compose, share, and discover Linked Data applications' data shapes, thereby nurturing interoperability within the Linked Data and Solid ecosystem.
+
+The core idea of the proposal is to create a tool for developers to easily display, co-create, and publish the shapes they use in apps. This tool will also provide an overview of the supershape, highlighting which components are most relevant based on their actual usage.
+
+In other words, a bottom-up, pragmatic approach to creating and sharing data shapes.
 
 ## Background
 
